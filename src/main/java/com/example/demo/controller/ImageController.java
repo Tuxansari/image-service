@@ -12,8 +12,15 @@ public class ImageController {
     private ImageService imageService;
 
     @PostMapping(value = "/getImage")
-    public @ResponseBody String getImage(@RequestBody final ImageRequest request) {
-        return imageService.getImage(request);
+    public @ResponseBody String getImagefromUrl(@RequestBody final ImageRequest request) {
+        return imageService.getImagefromUrl(request);
     }
+
+    @GetMapping(value = "/getImage/{imageid}")
+    public @ResponseBody
+    String getImagefromId(@PathVariable(value = "imageid") String imageId) {
+        return imageService.getImagefromId(imageId);
+    }
+
 
 }
