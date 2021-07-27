@@ -9,9 +9,9 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
-		ImageServiceImpl imageService = new ImageServiceImpl();
-		String data = imageService.convertUrlToBase64("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
-		System.out.println(data);
+//		ImageServiceImpl imageService = new ImageServiceImpl();
+//		String data = imageService.convertUrlToBase64("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+//		System.out.println(data);
 	}
 
 }

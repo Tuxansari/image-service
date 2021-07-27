@@ -21,6 +21,4 @@ public class ImageController {
     String getImagefromId(@PathVariable(value = "imageid") String imageId) {
         return imageService.getImagefromId(imageId);
     }
-
-
 }
